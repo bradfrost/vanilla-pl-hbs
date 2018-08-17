@@ -1,0 +1,19 @@
+{{# searchForm }}
+<form method="post" action="{{ url }}" role="search" class="c-search-form {{ styleModifier }}">
+
+	{{# searchLabel }}
+	<label for="search" class="c-search__label is-vishidden {{ styleModifier }}">{{{ label }}}</label>
+	{{/ searchLabel }}
+
+	<div class="c-search__body">
+
+		<input type="search" id="search" class="c-search__input" placeholder="{{ placeholder }}" value="{{ searchValue }}" />
+		
+		{{# searchFormIcon }}
+		{{> atoms-button }}
+		{{/ searchFormIcon }}
+
+	</div>
+
+</form><!-- end c-search -->
+{{/ searchForm }}

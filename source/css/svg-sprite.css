@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #SVG SPRITE OVERRIDES
+\*------------------------------------*/
+
+section {
+    border-top: none !important;
+    padding: 0 !important;
+}
+
+.icon-boxes {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+header {
+    display: none !important;
+}
+
+.icon-box {
+    width: initial !important;
+    height: auto !important;
+    background: none !important;
+    border: none !important;
+}
+
+.icon-boxes li {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 6rem !important;
+    height: 6rem !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #cccccd !important;
+}
+
+.icon-boxes li h2 {
+    color: #000 !important;
+    font-size: 0.75rem !important;
+    white-space: inherit !important;
+    text-overflow: unset !important;
+    overflow: inherit !important;
+}
+
+.icon-box .icon {
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.icon-boxes li button {
+    display: none !important;
+}

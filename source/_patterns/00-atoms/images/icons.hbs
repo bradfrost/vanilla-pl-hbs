@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <title>Icon kit preview | gulp-svg-sprites</title>
+    <link href="../../css/svg-sprite.css" rel="stylesheet" type="text/css" media="all"/>
+    <style type="text/css">@CHARSET "UTF-8";
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        color: #666;
+        background: #fafafa;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        line-height: 1.4
+    }
+
+    header {
+        display: block;
+        padding: 3em 3em 2em 3em;
+        background-color: #fff
+    }
+
+    header p {
+        margin: 0 0 0 0;
+    }
+
+    nav {
+        font-size: .7em;
+        display: block;
+        width: 100%;
+        margin: 0 0 2em 0
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 2em;
+        color: #0f7595;
+        white-space: nowrap
+    }
+
+    nav a:hover {
+        text-decoration: underline
+    }
+
+    nav a.current {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #666
+    }
+
+    section {
+        border-top: 1px solid #eee;
+        padding: 2em 3em 0 3em
+    }
+
+    ul {
+        margin: 0;
+        padding: 0
+    }
+
+    .icon-boxes li {
+        display: inline-block;
+        background-color: #fff;
+        position: relative;
+        margin: 0 2em 2em 0;
+        vertical-align: top;
+        border: 1px solid #ccc;
+        padding: 1em 1em 1em 1em;
+        cursor: default
+    }
+
+    .icon-box {
+        margin: 0;
+        width: 144px;
+        height: 144px;
+        position: relative;
+        background: #ccc url(data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=) top left repeat;
+        border: 1px solid #ccc;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center
+    }
+    .icon-box.inverted {
+        background: black;
+    }
+
+    .icon {
+        display: inline;
+        display: inline-block
+    }
+
+    .snippet-popover {
+        position: absolute;
+        display: none;
+        opacity: 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 16px;
+        z-index: 1;
+        transition: all .3s;
+    }
+    .snippet-popover.active {
+        display: block;
+        opacity: 1;
+    }
+
+    pre {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 5px 0;
+        font-size: 1em;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    footer {
+        display: block;
+        margin: 0;
+        padding: 0 3em 3em 3em
+    }
+
+    footer p {
+        margin: 0;
+        font-size: .7em
+    }
+
+    footer a {
+        color: #0f7595;
+        margin-left: 0
+    }
+    </style>
+
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	
+		<symbol id="minus" viewBox="0 0 16 16">
+			<path d="M0 6.5v3a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5H.5a.5.5 0 0 0-.5.5z"></path>
+		</symbol>
+	
+		<symbol id="plus" viewBox="0 0 16 16">
+			<path d="M15.5 6H10V.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V6H.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5H6v5.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V10h5.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"></path>
+		</symbol>
+	
+		<symbol id="search" viewBox="0 0 15 16">
+			<path d="M15 13l-3.893-3.893A5.921 5.921 0 0 0 12 6c0-3.313-2.688-6-6-6S0 2.687 0 6a6 6 0 0 0 6 6c1.143 0 2.2-.337 3.107-.891L13 15a.715.715 0 0 0 1 0l1-1a.713.713 0 0 0 0-1zm-9-3a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"></path>
+		</symbol>
+	
+		<symbol id="triangle-down" viewBox="0 0 12 16">
+			<title>triangle-down</title><path fill="#444" d="M0 6l5.996 5.996L11.992 6H0z"></path>
+		</symbol>
+	
+		<symbol id="triangle-left" viewBox="0 0 6 16">
+			<title>triangle-left</title><path fill="#444" d="M0 7.998l5.996 5.996V2.002L0 7.998z"></path>
+		</symbol>
+	
+		<symbol id="triangle-right" viewBox="0 0 6 16">
+			<title>triangle-right</title><path fill="#444" d="M.001 2.004L5.997 8 .001 13.996V2.004z"></path>
+		</symbol>
+	
+		<symbol id="triangle-up" viewBox="0 0 12 16">
+			<title>triangle-up</title><path fill="#444" d="M5.996 4L0 9.996h11.992L5.996 4z"></path>
+		</symbol>
+	
+</svg>
+
+<header>
+    <h1 id="logo">Gulp SVG Sprites <small>(7 icons in &lt;symbol&gt; mode)</small></h1>
+    <h4>Files Generated:</h4>
+    <ol>
+        <li><a href="icons.svg">icons.svg</a></li>
+    </ol>
+    <h4>Usage:</h4>
+    <ol>
+        <li>
+            Include the <strong>contents</strong> of the <a href="icons.svg">SVG file</a> just after the opening <code>&lt;body&gt;</code> tag.
+        </li>
+        <li>
+            Paste one of the snippets anywhere into your website.
+        </li>
+    </ol>
+
+</header>
+<section>
+    <ul class="icon-boxes">
+        
+
+        <li title="minus">
+            <div class="icon-box" id="icon-box-minus">
+                <svg class="icon minus">
+                    <use xlink:href="#minus" />
+                </svg>
+            </div>
+            <h2>minus</h2>
+            <button onclick="showPopover('snippet-minus')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-minus')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-minus">
+                <pre><code>&lt;svg class=&quot;icon minus&quot;&gt;&lt;use xlink:href=&quot;#minus&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="plus">
+            <div class="icon-box" id="icon-box-plus">
+                <svg class="icon plus">
+                    <use xlink:href="#plus" />
+                </svg>
+            </div>
+            <h2>plus</h2>
+            <button onclick="showPopover('snippet-plus')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-plus')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-plus">
+                <pre><code>&lt;svg class=&quot;icon plus&quot;&gt;&lt;use xlink:href=&quot;#plus&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="search">
+            <div class="icon-box" id="icon-box-search">
+                <svg class="icon search">
+                    <use xlink:href="#search" />
+                </svg>
+            </div>
+            <h2>search</h2>
+            <button onclick="showPopover('snippet-search')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-search')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-search">
+                <pre><code>&lt;svg class=&quot;icon search&quot;&gt;&lt;use xlink:href=&quot;#search&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="triangle-down">
+            <div class="icon-box" id="icon-box-triangle-down">
+                <svg class="icon triangle-down">
+                    <use xlink:href="#triangle-down" />
+                </svg>
+            </div>
+            <h2>triangle-down</h2>
+            <button onclick="showPopover('snippet-triangle-down')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-triangle-down')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-triangle-down">
+                <pre><code>&lt;svg class=&quot;icon triangle-down&quot;&gt;&lt;use xlink:href=&quot;#triangle-down&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="triangle-left">
+            <div class="icon-box" id="icon-box-triangle-left">
+                <svg class="icon triangle-left">
+                    <use xlink:href="#triangle-left" />
+                </svg>
+            </div>
+            <h2>triangle-left</h2>
+            <button onclick="showPopover('snippet-triangle-left')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-triangle-left')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-triangle-left">
+                <pre><code>&lt;svg class=&quot;icon triangle-left&quot;&gt;&lt;use xlink:href=&quot;#triangle-left&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="triangle-right">
+            <div class="icon-box" id="icon-box-triangle-right">
+                <svg class="icon triangle-right">
+                    <use xlink:href="#triangle-right" />
+                </svg>
+            </div>
+            <h2>triangle-right</h2>
+            <button onclick="showPopover('snippet-triangle-right')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-triangle-right')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-triangle-right">
+                <pre><code>&lt;svg class=&quot;icon triangle-right&quot;&gt;&lt;use xlink:href=&quot;#triangle-right&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="triangle-up">
+            <div class="icon-box" id="icon-box-triangle-up">
+                <svg class="icon triangle-up">
+                    <use xlink:href="#triangle-up" />
+                </svg>
+            </div>
+            <h2>triangle-up</h2>
+            <button onclick="showPopover('snippet-triangle-up')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-triangle-up')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-triangle-up">
+                <pre><code>&lt;svg class=&quot;icon triangle-up&quot;&gt;&lt;use xlink:href=&quot;#triangle-up&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+    </ul>
+</section>
+<footer>
+    <p>Generated by <a href="https://github.com/shakyshane/gulp-svg-sprites">Gulp Svg Sprites</a> - Preview page courtesy of <a href="http://iconizr.com" target="_blank">iconizr</a>.</p>
+</footer>
+<script type="text/javascript">
+    var openSnippet;
+    function showPopover(id) {
+        openSnippet = document.getElementById(id);
+        openSnippet.classList.add("active");
+    }
+    function hidePopover() {
+
+        openSnippet.classList.remove("active");
+    }
+    function invertBackground(id) {
+        var elem = document.getElementById(id);
+        elem.classList.toggle("inverted");
+    }
+</script>
+</body>
+</html>

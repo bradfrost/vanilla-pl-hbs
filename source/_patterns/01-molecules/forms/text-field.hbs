@@ -1,0 +1,19 @@
+<div class="c-field {{ styleModifier }}">
+
+	<label for="{{ id }}" class="c-field__label">{{ label }}</label>
+
+    <div class="c-field__body">
+
+        <input type="{{ type }}" id="{{ id }}" class="c-input" placeholder="{{ placeholder }}" value="{{ value }}" {{# required}}required="required"{{/ required}} {{# disabled }}disabled{{/ disabled }} {{# readOnly }}readonly{{/ readOnly }} />
+		{{# fieldIcon }}
+		<svg class="c-icon em-c-field__icon">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ iconPath }}#{{ fieldIcon }}"></use>
+		</svg>
+		{{/ fieldIcon }}
+    </div><!-- end c-field__body -->
+
+    {{# fieldNote }}
+    <div class="c-field__note">{{{ fieldNote }}}</div>
+    {{/ fieldNote }}
+
+</div><!-- end c-field -->

@@ -1,0 +1,17 @@
+<{{# buttonTag }}button{{/ buttonTag }}{{# linkTag }}a href="{{ url }}"{{/ linkTag }} class="c-btn {{ styleModifier }}" {{# buttonTitle}}title="{{ buttonTitle }}"{{/ buttonTitle}}{{# buttonIsToggle }} data-btn-icon-swap="{{ iconPath }}{{ buttonIconSwap }}"{{/ buttonIsToggle }}>
+
+    <div class="c-btn__inner">
+
+        {{# buttonIcon }}
+        <svg class="c-btn__icon {{# buttonIsToggle }}js-btn-icon{{/ buttonIsToggle }}">
+            <use href="{{ iconPath }}#{{ buttonIcon }}"></use>
+        </svg>
+        {{/ buttonIcon }}
+
+        {{# buttonText }}
+            {{ buttonText }}
+        {{/ buttonText }}
+
+    </div><!--end c-btn__inner-->
+
+</{{# buttonTag }}button{{/ buttonTag }}{{# linkTag }}a{{/ linkTag }}><!-- end c-btn -->
