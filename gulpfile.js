@@ -119,7 +119,7 @@ gulp.task('svg-sprite', function () {
       mode: 'symbols',
       cssFile: "../../css/svg-sprite.css",
       preview: {
-          symbols: '../source/_patterns/00-atoms/images/icons.mustache'
+          symbols: '../source/_patterns/00-atoms/images/icons.hbs'
       },
       svg: {
         symbols: 'icons.svg'

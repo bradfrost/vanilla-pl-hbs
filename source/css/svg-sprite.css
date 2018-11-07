@@ -12,7 +12,7 @@ section {
     flex-wrap: wrap !important;
 }
 
-header {
+style + svg + header {
     display: none !important;
 }
 

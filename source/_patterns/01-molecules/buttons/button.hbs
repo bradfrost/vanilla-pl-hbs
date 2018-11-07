@@ -2,15 +2,15 @@
 
     <div class="c-btn__inner">
 
-        {{# buttonIcon }}
-        <svg class="c-btn__icon {{# buttonIsToggle }}js-btn-icon{{/ buttonIsToggle }}">
+        {{#if buttonIcon }}
+        <svg class="c-btn__icon {{#if buttonIsToggle }}js-btn-icon{{/ if }}">
             <use href="{{ iconPath }}#{{ buttonIcon }}"></use>
         </svg>
-        {{/ buttonIcon }}
+        {{/ if }}
 
-        {{# buttonText }}
-            {{ buttonText }}
-        {{/ buttonText }}
+        {{#if buttonText }}
+        {{ buttonText }}
+        {{/ if }}
 
     </div><!--end c-btn__inner-->
 
