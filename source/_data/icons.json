@@ -1,13 +1,34 @@
 {
-	"iconPath" : "../../icons.svg",
-	"icon" : "search",
-	"icons" : [
-		{ "icon" : "minus" },
-		{ "icon" : "plus" },
-		{ "icon" : "search" },
-		{ "icon" : "triangle-down" },
-		{ "icon" : "triangle-up" },
-		{ "icon" : "triangle-right" },
-		{ "icon" : "triangle-left" }
+	"iconPath": "../../icons.svg",
+	"icon": "search",
+	"icons": [
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "minus"
+		},
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "plus"
+		},
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "search"
+		},
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "triangle-down"
+		},
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "triangle-up"
+		},
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "triangle-right"
+		},
+		{
+			"iconPath": "../../icons.svg",
+			"icon": "triangle-left"
+		}
 	]
 }
