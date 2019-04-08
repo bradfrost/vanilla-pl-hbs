@@ -1,11 +1,13 @@
 <header class="c-header {{ headerStyleModifier }}">
 
-    <div class="l-container">
+    {{#> molecules-layout-container styleModifier="c-header__inner" }}
 
-    	{{> molecules-logo }}
+        {{> molecules-logo }}
 
-    	{{> molecules-primary-nav }}
+        {{> molecules-primary-nav }}
 
-    </div><!--end l-container-->
+    {{/ molecules-layout-container}}
+    <!--end l-container-->
 
-</header><!--end c-header-->
+</header>
+<!--end c-header-->
