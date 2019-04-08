@@ -40,5 +40,11 @@
             "id" : "radio-2",
             "name" : "radioname"
         }
-    ]
+    ],
+    "searchForm": true,
+    "searchFormButton": {
+        "buttonTag": true,
+        "styleModifier": "u-is-vishidden",
+        "buttonText": "Search"
+    }
 }

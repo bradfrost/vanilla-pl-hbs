@@ -1,19 +1,19 @@
-{{# searchForm }}
+{{#if searchForm }}
 <form method="post" action="{{ url }}" role="search" class="c-search-form {{ styleModifier }}">
 
-	{{# searchLabel }}
-	<label for="search" class="c-search__label is-vishidden {{ styleModifier }}">{{{ label }}}</label>
-	{{/ searchLabel }}
+	{{#each searchLabel }}
+	<label for="search" class="c-search-form__label is-vishidden {{ styleModifier }}">{{{ label }}}</label>
+	{{/ each }}
 
-	<div class="c-search__body">
+	<div class="c-search-form__body">
 
-		<input type="search" id="search" class="c-search__input" placeholder="{{ placeholder }}" value="{{ searchValue }}" />
-		
-		{{# searchFormIcon }}
-		{{> atoms-button }}
-		{{/ searchFormIcon }}
+		<input type="search" id="search" class="c-search-form__input" placeholder="{{ placeholder }}" value="{{ searchValue }}" />
+
+		{{# searchFormButton }}
+			{{> molecules-button }}
+		{{/ searchFormButton }}
 
 	</div>
 
 </form><!-- end c-search -->
-{{/ searchForm }}
+{{/ if }}

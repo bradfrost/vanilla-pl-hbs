@@ -4,16 +4,16 @@
 
     <div class="c-field__body">
 
-        <input type="{{ type }}" id="{{ id }}" class="c-input" placeholder="{{ placeholder }}" value="{{ value }}" {{# required}}required="required"{{/ required}} {{# disabled }}disabled{{/ disabled }} {{# readOnly }}readonly{{/ readOnly }} />
-		{{# fieldIcon }}
+        <input type="{{ type }}" id="{{ id }}" class="c-input" placeholder="{{ placeholder }}" value="{{ value }}" {{#if required}}required="required"{{/ if }} {{#if disabled }}disabled{{/ if }} {{#if readOnly }}readonly{{/ if }} />
+		{{#if fieldIcon }}
 		<svg class="c-icon em-c-field__icon">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ iconPath }}#{{ fieldIcon }}"></use>
 		</svg>
-		{{/ fieldIcon }}
+		{{/ if }}
     </div><!-- end c-field__body -->
 
-    {{# fieldNote }}
+    {{#if fieldNote }}
     <div class="c-field__note">{{{ fieldNote }}}</div>
-    {{/ fieldNote }}
+    {{/ if }}
 
 </div><!-- end c-field -->
