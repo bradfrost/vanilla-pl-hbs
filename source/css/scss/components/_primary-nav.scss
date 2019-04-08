@@ -5,6 +5,9 @@
 /**
  * Primary navigation existing in the header and maybe the footer
  */
+.c-primary-nav {
+	margin-left: auto;
+}
 
 /**
  * Primary navigation list
@@ -17,7 +20,7 @@
  * Primary navigation item
  */
 .c-primary-nav__item {
-	margin-right: 1rem;
+	margin-left: 1rem;
 }
 
 /**
@@ -27,5 +30,4 @@
 	display: block;
 	padding: 0.5rem 0;
 	cursor: pointer;
-
 }

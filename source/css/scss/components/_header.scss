@@ -8,6 +8,8 @@
 .c-header {
 	position: relative;
 	background: $color-neutral-gray-07;
+	padding: 1rem;
+	margin-bottom: 2rem;
 }
 
 /**
@@ -15,17 +17,7 @@
  */
 .c-header__inner {
 	display: flex;
-	padding: 1rem;
-
-	/**
-	 * Header inner within vertical header
-	 */
-	.c-header--vertical & {
-		@media all and (min-width: $bp-xl) {
-			flex-direction: column;
-			min-height: 100vh;
-		}
-	}
+	align-items: center;
 }
 
 /**
@@ -86,7 +78,7 @@
 	/**
 	 * Active header nav container within vertical header
 	 */
-	.c-header--vertical &{
+	.c-header--vertical & {
 		@media all and (min-width: $bp-xl) {
 			margin-left: 0;
 			width: 100%;
