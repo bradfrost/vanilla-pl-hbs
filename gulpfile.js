@@ -7,6 +7,7 @@ var gulp = require("gulp"),
 	path = require("path"),
 	browserSync = require("browser-sync").create(),
 	sass = require("gulp-sass"),
+	sassGlob = require("gulp-sass-glob"),
 	concat = require("gulp-concat"),
 	uglify = require("gulp-uglify"),
 	svgSprite = require("gulp-svg-sprites"),
@@ -52,13 +53,8 @@ gulp.task("clean", function() {
  ******************************************************/
 gulp.task("pl-sass", function() {
 	return gulp
-		.src(
-			path.resolve(
-				paths().source
-					.css,
-				"**/*.scss"
-			)
-		)
+		.src("source/css/style.scss")
+		.pipe(sassGlob())
 		.pipe(sass().on("error", sass.logError))
 		.pipe(
 			gulp.dest(
@@ -80,7 +76,7 @@ gulp.task("scsstojson", function(done) {
 			src:
 				"./source/css/scss/abstracts/_variables.scss",
 			dest:
-				"./source/_patterns/00-atoms/01-global/00-brand-colors.json",
+				"./source/_patterns/00-atoms/01-tokens/00-brand-colors.json",
 			lineStartsWith: "$color-brand-",
 			allowVarValues: false
 		},
@@ -88,7 +84,7 @@ gulp.task("scsstojson", function(done) {
 			src:
 				"./source/css/scss/abstracts/_variables.scss",
 			dest:
-				"./source/_patterns/00-atoms/01-global/00-neutral-colors.json",
+				"./source/_patterns/00-atoms/01-tokens/00-neutral-colors.json",
 			lineStartsWith:
 				"$color-neutral-",
 			allowVarValues: false
@@ -97,7 +93,7 @@ gulp.task("scsstojson", function(done) {
 			src:
 				"./source/css/scss/abstracts/_variables.scss",
 			dest:
-				"./source/_patterns/00-atoms/01-global/00-utility-colors.json",
+				"./source/_patterns/00-atoms/01-tokens/00-utility-colors.json",
 			lineStartsWith:
 				"$color-utility-",
 			allowVarValues: false
@@ -106,7 +102,7 @@ gulp.task("scsstojson", function(done) {
 			src:
 				"./source/css/scss/abstracts/_variables.scss",
 			dest:
-				"./source/_patterns/00-atoms/01-global/02-font-families.json",
+				"./source/_patterns/00-atoms/01-tokens/02-font-families.json",
 			lineStartsWith: "$font-family-",
 			allowVarValues: false
 		},
@@ -114,7 +110,7 @@ gulp.task("scsstojson", function(done) {
 			src:
 				"./source/css/scss/abstracts/_variables.scss",
 			dest:
-				"./source/_patterns/00-atoms/01-global/02-font-sizes.json",
+				"./source/_patterns/00-atoms/01-tokens/02-font-sizes.json",
 			lineStartsWith: "$font-size-",
 			allowVarValues: false
 		}
@@ -548,9 +544,7 @@ function watch() {
 			name: "CSS",
 			paths: [
 				normalizePath(
-					paths()
-						.source
-						.css,
+					"source",
 					"**",
 					"*.scss"
 				)

@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #LAYOUT CONTAINER
+\*------------------------------------*/
+
+/**
+ * Layout Container
+ * 1) Caps the width of the content to the maximum width
+ *    and centers the container
+ */
+.l-container {
+	max-width: $l-max-width;
+	margin: 0 auto;
+}

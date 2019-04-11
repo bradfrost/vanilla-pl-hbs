@@ -9,12 +9,13 @@
  * Page header title
  */
 .c-page-header__title {
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 }
 
 /**
  * Page description
  */
-.c-page-header__desc {
-    margin-bottom: 2rem;
+.c-page-header__description {
+	font-size: $font-size-med-2;
+	margin-bottom: 2rem;
 }

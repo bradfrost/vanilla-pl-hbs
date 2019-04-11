@@ -1,4 +1,4 @@
- /*------------------------------------*\
+/*------------------------------------*\
     #TABLE OF CONTENTS
 \*------------------------------------*/
 /**
@@ -15,11 +15,6 @@
 @import "scss/abstracts/variables";
 @import "scss/abstracts/mixins";
 @import "scss/abstracts/colors";
-@import "scss/abstracts/typography";
-
-
-
-
 
 /*------------------------------------*\
     #BASE
@@ -36,39 +31,18 @@
 @import "scss/base/text";
 @import "scss/base/table";
 
-
-
-
-
 /*------------------------------------*\
     #LAYOUT
 \*------------------------------------*/
 @import "scss/layout/layout";
-
-
-
-
-
-/*------------------------------------*\
-    #COMPONENTS
-\*------------------------------------*/
-@import "scss/components/buttons";
-@import "scss/components/footer";
-@import "scss/components/header";
-@import "scss/components/logo";
-@import "scss/components/icon";
-@import "scss/components/page-header";
-@import "scss/components/primary-nav";
-@import "scss/components/text-passage";
-@import "scss/components/field";
-@import "scss/components/search-form";
-
-
-
-
 
 /*------------------------------------*\
     #UTILITIES
 \*------------------------------------*/
 @import "scss/utilities/visibility";
 @import "scss/utilities/spacing";
+
+/*------------------------------------*\
+    #COMPONENTS
+\*------------------------------------*/
+@import "../_patterns/**/*.scss";
