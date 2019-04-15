@@ -14,27 +14,3 @@
 /*------------------------------------*\
     #GRID
 \*------------------------------------*/
-
-/**
- * Grid Container
- */
-.l-grid {
-	display: flex;
-	flex-wrap: wrap;
-
-	@supports (display: grid) {
-		display: grid;
-		grid-gap: 16px;
-		grid-template-columns: repeat(
-			auto-fill,
-			minmax(285px, 1fr)
-		);
-		margin: 0;
-	}
-}
-
-/**
- * Grid Item
- */
-.l-grid__item {
-}
