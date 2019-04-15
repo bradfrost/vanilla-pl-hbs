@@ -1,24 +1,3 @@
 {
-	"cards": [
-		{
-			"heading": "Why join the USAPA",
-			"cardImage": "https://www.usapa.org/wp-content/uploads/2013/05/why-join-usapa-1-678x340.jpg",
-			"description": "USAPA’s membership is composed of people who, just like you, share a passion for this great game! When you join USAPA, you receive exclusive benefits for your Membership.  Click Here to see the member perks!..."
-		},
-		{
-			"heading": "Places2Play",
-			"cardImage": "https://www.usapa.org/wp-content/uploads/2013/05/why-join-usapa-1-678x340.jpg",
-			"description": "USAPA’s membership is composed of people who, just like you, share a passion for this great game! When you join USAPA, you receive exclusive benefits for your Membership.  Click Here to see the member perks!..."
-		},
-		{
-			"heading": "Upcoming Tournaments",
-			"cardImage": "https://www.usapa.org/wp-content/uploads/2013/05/why-join-usapa-1-678x340.jpg",
-			"description": "USAPA’s membership is composed of people who, just like you, share a passion for this great game! When you join USAPA, you receive exclusive benefits for your Membership.  Click Here to see the member perks!..."
-		},
-		{
-			"heading": "Pickleball Videos",
-			"cardImage": "https://www.usapa.org/wp-content/uploads/2013/05/why-join-usapa-1-678x340.jpg",
-			"description": "USAPA’s membership is composed of people who, just like you, share a passion for this great game! When you join USAPA, you receive exclusive benefits for your Membership.  Click Here to see the member perks!..."
-		}
-	]
+	"cards": []
 }
