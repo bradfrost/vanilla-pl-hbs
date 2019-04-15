@@ -1,0 +1,22 @@
+<a href="{{ url }}" class="c-card {{ styleModifier }}">
+
+	<div class="c-card__header">
+		<h2 class="c-card__title">{{ heading }}</h2>
+        {{#if cardImage }}
+		<div class="c-card__media">
+			{{> atoms-card-image src=cardImage }}
+		</div>
+		{{/ if }}
+	</div>
+
+	<div class="c-card__body">
+		
+		{{#if description}}<p class="c-card__excerpt">{{ description }}</p>{{/ if }}
+	</div><!-- end c-card__body -->
+
+	<div class="c-card__footer">
+        {{#if cta }}
+		{{> molecules-button buttonText=cta }}
+        {{/ if }}
+	</div>
+</a><!-- end c-card -->
