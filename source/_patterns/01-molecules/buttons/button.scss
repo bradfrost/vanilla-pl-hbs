@@ -8,7 +8,7 @@
  */
 .c-btn {
 	display: inline-block;
-	border: $border-thickness solid $color-btn-primary-border;
+	border: $border-width solid $color-btn-primary-border;
 	border-radius: $border-radius;
 	background: $color-neutral-gray-73;
 	color: $color-neutral-white;
@@ -19,7 +19,8 @@
 	text-align: center;
 	transition: all $anim-fade-quick $anim-ease;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		background: $color-btn-primary-bg-hover;
 	}
 }
