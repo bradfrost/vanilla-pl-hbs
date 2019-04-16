@@ -10,15 +10,15 @@
  * Input placeholder text base styles
  */
 ::-webkit-input-placeholder {
-   color: $color-form-placeholder;
+	color: $color-form-placeholder;
 }
 
 ::-moz-placeholder {
-   color: $color-form-placeholder;
+	color: $color-form-placeholder;
 }
 
 :-ms-input-placeholder {
-   color: $color-form-placeholder;
+	color: $color-form-placeholder;
 }
 
 /**
@@ -34,7 +34,7 @@ fieldset {
  * Legend base styles
  */
 legend {
-    margin-bottom: 0.25rem;
+	margin-bottom: 0.25rem;
 }
 
 /**
@@ -42,17 +42,20 @@ legend {
  */
 label {
 	display: block;
-    padding-bottom: 0.25rem;
-    color: $color-form-label;
+	padding-bottom: 0.25rem;
+	color: $color-form-label;
 }
 
 /**
  * Add font size 100% of form element and margin 0 to these elements
  */
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: $font-size-med;
-    margin: 0;
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: $font-size-med;
+	margin: 0;
 }
 
 /**
@@ -65,13 +68,14 @@ textarea {
 /**
  * Input  and text area base styles
  */
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: $border-thickness solid $color-form-border;
-    background: $color-form-bg;
+input,
+textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border: $border-width solid $color-form-border;
+	background: $color-form-bg;
 
-    &:focus {
+	&:focus {
 		border-color: $color-form-border-focus;
 	}
 }
@@ -79,8 +83,15 @@ input, textarea {
 /**
  * Remove webkit appearance styles from these elements
  */
-input[type=text], input[type=search], input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration, input[type=url], input[type=number], textarea {
+input[type="text"],
+input[type="search"],
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="url"],
+input[type="number"],
+textarea {
 	-webkit-appearance: none;
+	display: block;
 }
 
 /**
@@ -88,17 +99,17 @@ input[type=text], input[type=search], input[type="search"]::-webkit-search-cance
  */
 input[type="checkbox"],
 input[type="radio"] {
-    width: auto;
-    margin-right: 0.3rem;
-    border-color: $color-form-border;
+	width: auto;
+	margin-right: 0.3rem;
+	border-color: $color-form-border;
 }
 
 /**
  * Search input base styles
  */
 input[type="search"] {
-    -webkit-appearance: none;
-    border-radius: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
 /**
@@ -106,13 +117,13 @@ input[type="search"] {
  * 1) Remove default styling
  */
 select {
-    display: block;
+	display: block;
 	font-size: $font-size-med;
 	width: 100%;
-    border: $border-thickness solid $color-form-border;
-    padding: 0.5rem;
-    background: $color-form-bg;
-    color: $color-form;
+	border: $border-width solid $color-form-border;
+	padding: 0.5rem;
+	background: $color-form-bg;
+	color: $color-form;
 
 	&:focus {
 		border-color: $color-form-border-focus;
