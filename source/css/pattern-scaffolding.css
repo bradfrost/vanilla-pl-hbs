@@ -115,6 +115,10 @@
 	color: var(--pl-color-fpo);
 }
 
+.sg-pattern-example small {
+	display: none;
+}
+
 /**
  * Add height and overflow to two column fixed layout to show functionality only in style-guide example.
  */
