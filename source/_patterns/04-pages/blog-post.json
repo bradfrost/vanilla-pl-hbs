@@ -1,6 +1,7 @@
 {
 	"page": {
-		"title": "My Amazing Blog Post",
-		"description": "Posted by Vitaly on July 30th, 1984"
-	}
+		"title": "Image Sprites in Super Mario Bros. 3",
+		"description": "Posted by Vitaly Friedman on July 30th, 1990"
+	},
+	"htmlText": "<p>My name is Vitaly Friedman and I just finished playing a fantastic super-cool new game called <a href='#'>Super Mario Bros 3.</a></p><p>As I was playing, I couldn't help but notice how fantastic all the costumes Mario and Luigi could wear. I had to know how the game designers engineered this. I dove deep into the making of the game and discovered something called an 'image sprite'.</p><p><img src='../../images/mario.png' alt='Mario sprite' /></p>"
 }
