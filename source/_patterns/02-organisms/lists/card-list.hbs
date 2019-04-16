@@ -1,7 +1,7 @@
 <ul class="c-card-list">
-    {{# cards }}
+    {{#each cards }}
     <li class="c-card-list__item">
-        {{> molecules-card}}
+        {{> molecules-card cardImg=logoImg }}
     </li>
-    {{/ cards }}
+    {{/ each }}
 </ul>
