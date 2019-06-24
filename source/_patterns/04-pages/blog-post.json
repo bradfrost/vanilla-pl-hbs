@@ -1,7 +1,10 @@
 {
 	"page": {
-		"title": "Image Sprites in Super Mario Bros. 3",
-		"description": "Posted by Vitaly Friedman on July 30th, 1990"
+		"title": "Blog post",
+		"description": "Posted by Brad"
 	},
-	"htmlText": "<p>My name is Vitaly Friedman and I just finished playing a fantastic super-cool new game called <a href='#'>Super Mario Bros 3.</a></p><p>As I was playing, I couldn't help but notice how fantastic all the costumes Mario and Luigi could wear. I had to know how the game designers engineered this. I dove deep into the making of the game and discovered something called an 'image sprite'.</p><p><img src='../../images/mario.png' alt='Mario sprite' /></p>"
+	"htmlText": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+	"section": {
+		"title": "section title"
+	}
 }
