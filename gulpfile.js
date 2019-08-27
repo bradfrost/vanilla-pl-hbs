@@ -559,6 +559,24 @@ function watch() {
 			)
 		},
 		{
+			name: "Variable SCSS",
+			paths: [
+				normalizePath(
+					paths()
+						.source
+						.css,
+					"scss/abstracts/_variables.scss"
+				)
+			],
+			config: {
+				awaitWriteFinish: true
+			},
+			tasks: gulp.series(
+				"scsstojson",
+				reloadCSS
+			)
+		},
+		{
 			name: "SVG Sprite CSS",
 			paths: [
 				normalizePath(
