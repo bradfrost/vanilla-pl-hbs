@@ -29,7 +29,7 @@
 	"styleGuideExcludes": [],
 	"defaultPattern": "all",
 	"defaultShowPatternInfo": false,
-	"cleanPublic": false,
+	"cleanPublic": true,
 	"cleanOutputHtml": true,
 	"patternExtension": "mustache",
 	"ignored-extensions": ["scss", "DS_Store", "less"],

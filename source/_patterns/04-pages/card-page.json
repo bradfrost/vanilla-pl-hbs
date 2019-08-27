@@ -1,33 +1,37 @@
 {
+	"page": {
+		"title": "Look at these amazing cards",
+		"description": "Wow, that's a really nice list of cards"
+	},
 	"cards": [
 		{
-			"title": "Card Title",
-			"cardImage": "../../images/400x300.png",
+			"title": "Thing Number 1",
+			"cardImage": "https://picsum.photos/400/300",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 		},
 		{
-			"title": "Card Title",
-			"cardImage": "../../images/400x300.png",
+			"title": "Thing Number 2",
+			"cardImage": "https://picsum.photos/400/300?v1",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 		},
 		{
-			"title": "Card Title",
-			"cardImage": "../../images/400x300.png",
+			"title": "Thing Number 3",
+			"cardImage": "https://picsum.photos/400/300?v2",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 		},
 		{
-			"title": "Card Title",
-			"cardImage": "../../images/400x300.png",
+			"title": "Thing Number 4",
+			"cardImage": "https://picsum.photos/400/300?v3",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 		},
 		{
-			"title": "Card Title",
-			"cardImage": "../../images/400x300.png",
+			"title": "Thing Number 5",
+			"cardImage": "https://picsum.photos/400/300?v4",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 		},
 		{
-			"title": "Card Title",
-			"cardImage": "../../images/400x300.png",
+			"title": "Thing Number 6",
+			"cardImage": "https://picsum.photos/400/300?v5",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 		}
 	]
