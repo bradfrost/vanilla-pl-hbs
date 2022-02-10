@@ -8,7 +8,7 @@
     "gulp": "4.0",
     "gulp-copy": "1.0.0",
     "minimist": "^1.2.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "patternengine-node-handlebars": "^1.0.3",
     "patternlab-node": "^2.0.0",
     "scsstojson": "^1.0.2",
